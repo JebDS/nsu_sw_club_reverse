@@ -33,13 +33,14 @@ body{
     user-select: none;
 }
 
-body::-webkit-scrollbar { /*스크롤바 전체*/
+/*스크롤바 전체*/
+body::-webkit-scrollbar { 
 	background-color: black;
     width: 10px;
 }
 
-
-body::-webkit-scrollbar-thumb { /*스크롤바 막대*/
+/*스크롤바 막대*/
+body::-webkit-scrollbar-thumb { 
 	background-color: rgb(230, 149, 92);
     border-radius: 10px;
 }
