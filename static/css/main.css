@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400; /*400기본, 900강조*/
+    font-style: normal;
+} 
+
+* {
+    border: none;
+    font-family: Pretendard;
+    margin: 0;
+    padding: 0;
+    cursor: url('/img/c_1.png') 15 15, auto;
+}
+
+*:active{
+    cursor: url('/img/c_2.png') 15 15, auto;
+}
+
+html{
+    /* tag이동시 스크롤바 천천히 */
+	scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(224, 224, 224);
+    /* 드래그 방지 */
+    -ms-user-select: none; 
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body::-webkit-scrollbar { /*스크롤바 전체*/
+	background-color: black;
+    width: 10px;
+}
+
+
+body::-webkit-scrollbar-thumb { /*스크롤바 막대*/
+	background-color: rgb(230, 149, 92);
+    border-radius: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+
+button:focus{
+    outline: 0;
+}
+
+/* button:hover{
+    cursor: pointer;
+} */
+
+/* ----------------폰트, 문장----------------*/
+/* ----------------폰트, 문장----------------*/
+/* ----------------폰트, 문장----------------*/
+
+a{
+    text-decoration: none; /*밑줄 제거*/
+}
+
+/* a:hover{
+    cursor: pointer;
+} */
+
+a:focus{
+    outline: 0;
+}
+
+/* ----------------시맨틱 태그 설정----------------*/
+/* ----------------시맨틱 태그 설정----------------*/
+/* ----------------시맨틱 태그 설정----------------*/
+
+nav{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    position: fixed;
+    background-color: black;
+    z-index: 2;
+}
+
+nav li{
+    display: inline-block; /*가로정렬*/
+    padding-left: 17%;
+}
+
+nav a{
+    font-size: 2vw;
+    color: rgb(224, 224, 224);
+}
+
+main {
+    padding-top: 6vh;
+    padding-left: 3%;
+}
+
+section{
+    /*디폴트 스타일 제거*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: center;
+    height: 100vh;
+}
+
+.semicolons{
+    color: rgb(230, 149, 92);
+}
+
+/* ----------------#0 reverse----------------*/
+/* ----------------#0 reverse----------------*/
+/* ----------------#0 reverse----------------*/
+
+#z_main{
+    padding-top: 30vh;
+}
+
+
+#z_left{
+    padding-top: 23vh;
+    text-align: left;
+    font-size: 1.3vw;
+}
+
+#n_one, #n_two, #n_three{
+    color: rgb(224, 224, 224);
+}
+
+#n_one.here, #n_two.here, #n_three.here{
+    color: rgb(230, 149, 92);
+}
+
+/* ----------------#1 what----------------*/
+/* ----------------#1 what----------------*/
+/* ----------------#1 what----------------*/
+
+#one_box{
+    height: 111vh;
+    display: flex;
+    align-items: center;
+}
+
+#one_img{
+    width: 28vw;
+}
+
+#ond_table_text{
+    text-align: left;
+    width: 40vw;
+    font-size: 1.5vw;
+    padding-right: 4vw;
+}
+
+#one td{
+    text-align: justify;
+}
+
+#one td:after{
+	content: '';
+    display: inline-block;
+    width: 50%;
+    
+}
+
+#one_img_div{
+    position : relative;
+}
+
+.one_BT1, .one_BT2{
+    position: absolute;
+    width: 5vw;
+    top: 0px;
+    bottom: 0px;
+    font-size: 2vw;
+    color: rgb(245, 245, 245, 0);
+    background-color: rgb(0, 0, 0, 0);
+    transition-duration: 0.4s;
+}
+
+.one_BT1:hover, .one_BT2:hover{
+    color: rgb(245, 245, 245, 1);
+    background-color: rgb(0, 0, 0, 0.5);
+    
+}
+
+.one_BT1{
+    left: 0px;
+}
+
+.one_BT2{
+    right: 0px;
+}
+
+/* ----------------#2 project----------------*/
+/* ----------------#2 project----------------*/
+/* ----------------#2 project----------------*/
+
+#two_box{
+    height: 111vh;
+    display: inline-flex;
+    align-items: center;
+}
+
+#two_img1, #two_img2, #two_img3{
+    width: 18vw;
+    border: solid rgb(245, 245, 245) 3px;
+    transition-duration: 0.4s;
+}
+
+#two_img1:hover, #two_img2:hover, #two_img3:hover{
+    transform: scale(1.2);
+}
+
+#two tr{
+    border: none;
+    background: linear-gradient(to right, rgb(255, 222, 89) 30%, rgb(255, 145, 77) 100%);
+}
+
+#two td{
+    border: none;
+    padding: 1.5vw;
+}
+
+#two_L, #two_R{
+    font-size: 3vw;
+    font-weight: 800;
+    height: 3vw;
+    background-color: black;
+    color: rgb(255, 145, 77);
+}
+
+#two_L{
+    color: rgb(255, 222, 89);
+    margin-right: 2vw;
+}
+
+#two_R{
+    margin-left: 2vw;
+}
+
+
+/* ----------------#3 Login----------------*/
+/* ----------------#3 Login----------------*/
+/* ----------------#3 Login----------------*/
+
+#t_main{
+    /*정렬*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#t_home{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+    background-color: rgb(245, 245, 245);
+    color:rgb(50, 50, 50);
+    width: 30vw;
+    /* height: 32vh; */
+    border-radius: 1vmax;
+}
+
+#t_home a{
+    color: rgb(124, 124, 124);
+}
+#t_home a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#loginBT {
+    position: relative;
+    font-size: 1.5em;
+    width: 8em;
+    height: 2.5em;
+    border-radius: 1vmax;
+    background-color: rgb(255, 179, 57);
+    border: 0;
+    overflow: hidden;
+    /* cursor: pointer; */
+}
+
+#loginBT > span {
+    position: relative;
+    z-index: 2;
+}
+
+/* 그라데이션 오른쪽에 크기 0으로 압축 */
+#loginBT::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 179, 57) 30%, rgb(255, 145, 77) 100%);
+    transition: width 0.5s ease;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+/* 손가락 갖다대면 그라데이션 확장 */
+#loginBT:hover::before { 
+    width: 100%;
+}
+
+#loginBT:focus {
+    outline: none;
+}

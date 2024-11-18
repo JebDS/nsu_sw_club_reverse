@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/login.css" />
+    <title>login</title>
+</head>
+<body>
+    <div id="main">
+        <div id="home">
+            <h1>로그인</h1><br>
+            <form method="post" name="login" action="{{ url_for('login_process') }}" id="login_form"> <!--action : 폼 전송할 서버쪽 스크립트 파일 지정-->
+                <div>
+                    <input id="username" type="text" name="username" placeholder="Username"><br>
+                </div><div>
+                    <input id="password" type="password" name="password" placeholder="Password"><br>
+                </div><div>
+                <input id="button" type="submit" value="로그인"></div>
+            </form>
+            <p style="font-size: 0.8rem; margin-top: 5px;">아이디가 없나요? <a href="{{ url_for('register') }}" style="margin-top: 0.5em;">회원가입하기</a></p>
+        </div>
+    </div>
+</body>
+</html>

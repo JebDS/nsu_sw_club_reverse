@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400; /*400기본, 900강조*/
+    font-style: normal;
+} 
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color:rgb(235, 235, 235);
+    font-family: 'Pretendard';
+}
+
+
+
+a{
+    text-decoration: none; /*밑줄 제거*/
+    color: rgb(124, 124, 124);
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+a:focus{
+    outline: 0;
+}
+
+input[type="submit"]{
+    background-color: rgb(255, 179, 57);
+    padding: 0.5em;
+    font-size: 1em;
+    width: 22vmax;
+    height: 2.5em;
+    border-radius: 1em;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:focus{
+    outline: 0;
+}
+
+[type="submit"]:hover{
+    border-radius: 1vmax;
+    background-color: rgb(229, 149, 21);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~id~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~id~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~id~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#main{
+    /*정렬*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(245, 245, 245);
+    color:rgb(50, 50, 50);
+    width: 30vw;
+    /* height: 32vh; */
+    border-radius: 1vmax;
+}
+
+/* 로그인 */
+/* 로그인 */
+/* 로그인 */
+
+/* 버튼 기본 스타일 */
+#loginBT {
+    position: relative;
+    font-size: 1.5em;
+    width: 8em;
+    height: 2.5em;
+    border-radius: 1vmax;
+    background-color: rgb(255, 179, 57);
+    border: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#loginBT > span {
+    position: relative;
+    z-index: 2;
+}
+
+/* 그라데이션 오른쪽에 크기 0으로 압축 */
+#loginBT::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(255, 179, 57) 30%, rgb(186, 83, 255) 100%);
+    transition: width 0.5s ease;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+/* 손가락 갖다대면 그라데이션 확장 */
+#loginBT:hover::before { 
+    width: 100%;
+}
+
+#loginBT:focus {
+    outline: none;
+}
+
+
+/* 회원가입 */
+/* 회원가입 */
+/* 회원가입 */
+
+#new_form{
+    text-align: left;
+}
+
+#new_form input[type="text"], #new_form input[type="password"]{
+    padding: 1em;
+    margin-top: 5px;
+    font-size: 1em;
+    width: 20vmax;
+    height: 1em;
+    border-radius: 1em;
+}
+
+#new_form input[type="button"]{
+    float: right;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    width: 5vmax;
+    height: 2em; 
+    border-radius: 0.3em;
+    background-color: rgb(255, 179, 57);
+    /* background-color: rgb(196, 196, 196); : 중복 확인 끝났을 때 색*/
+}
+
+#new_div{
+    margin-top: 5px;
+    margin-bottom: 0.8rem;
+}
+
+#id_result, #pw_result{
+    margin-top: 3px; 
+    font-size: 0.8em; 
+    margin-left: 5px;
+    /* color: brown; */ /*불일치*/
+    /* color: rgb(255, 179, 57); */ /*일치*/
+}
+
+/* 회원가입-email */
+/* 회원가입-email */
+/* 회원가입-email */
+
+#new_form select{
+    font-size: 1em;
+    width: 8.5vmax;
+    height: 3em; 
+    padding-left: 1rem;
+    border-radius: 1em;
+}
+
+#new_form select:hover, #new_form input[type="button"]{
+    cursor: pointer;
+}
+
+#new_form option:checked {
+    background: rgb(215, 215, 215);
+  }
+
+
+  /* 로그인 폼 입력창 스타일 */
+#login_form input[type="text"], #login_form input[type="password"] {
+    padding: 1em;
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+    width: 20vmax;
+    height: 1.5em;
+    border-radius: 1em;
+    border: none;
+    background-color: #f0f0f0; /* 원하는 배경색으로 변경 가능 */
+    color: #333; /* 텍스트 색상 */
+}
+
+/* 입력창 포커스 시 스타일 */
+#login_form input[type="text"]:focus, #login_form input[type="password"]:focus {
+    outline: none;
+    border: 1px solid rgb(255, 179, 57); /* 포커스 시 테두리 색상 */
+}
