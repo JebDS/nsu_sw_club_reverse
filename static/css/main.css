@@ -10,11 +10,11 @@
     font-family: Pretendard;
     margin: 0;
     padding: 0;
-    cursor: url('/img/c_1.png') 15 15, auto;
+    cursor: url('img/c_1.png') 15 15, auto;
 }
 
 *:active{
-    cursor: url('/img/c_2.png') 15 15, auto;
+    cursor: url('img/c_2.png') 15 15, auto;
 }
 
 html{
